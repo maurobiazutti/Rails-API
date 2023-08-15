@@ -12,7 +12,7 @@ namespace :dev do
     puts "Tipos Contato cadastrados com Sucesso!"
     ##################################################
     puts "Cadastrando os contatos"
-    100.times do |i|
+    15.times do |i|
       Contact.create!(
         name: Faker::Name.name,
         email: Faker::Internet.email,
@@ -21,5 +21,6 @@ namespace :dev do
       )
     end
     puts "Contatos cadastrados com Sucesso!"
+
   end
 end
